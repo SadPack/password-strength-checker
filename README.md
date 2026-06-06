@@ -28,11 +28,3 @@ Password Strength Checker is a simple cybersecurity web project developed using 
 3. Enter a password in the input field.
 4. The system will display password strength and rule status.
 
-## Folder Structure
-password-strength-checker/
-│
-├── index.html
-├── CSS/
-│   └── style.css
-└── JS/
-    └── script.js
