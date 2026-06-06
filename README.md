@@ -1,4 +1,5 @@
 # Password Strength Checker
+https://sadpack.github.io/password-strength-checker/
 
 ## Project Overview
 Password Strength Checker is a simple cybersecurity web project developed using HTML, CSS, and JavaScript. The purpose of this project is to check the strength of a password based on common password security rules.
