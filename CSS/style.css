@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #1f8ef1, transparent 35%),
+                linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.card {
+    max-width: 720px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    text-align: center;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.input-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.10);
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.input-box input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: #ffffff;
+    color: #111827;
+}
+
+.input-box input::placeholder {
+    color: #64748b;
+}
+
+.input-box button {
+    padding: 15px 22px;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.input-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.strength-area {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.strength-bar {
+    width: 100%;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+#strengthFill {
+    height: 100%;
+    width: 0%;
+    background: #94a3b8;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+#strengthText {
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.rules-section {
+    background: rgba(15, 23, 42, 0.55);
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.rules-section h3 {
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 23px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+
+li {
+    padding: 12px 14px;
+    font-size: 15px;
+    line-height: 1.4;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5e1;
+    transition: 0.3s;
+}
+
+.valid {
+    color: #bbf7d0;
+    background: rgba(22, 163, 74, 0.22);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    font-weight: 600;
+}
+
+.invalid {
+    color: #fecaca;
+    background: rgba(220, 38, 38, 0.18);
+    border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.valid::before {
+    content: "✔ ";
+}
+
+.invalid::before {
+    content: "✖ ";
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box button {
+        width: 100%;
+    }
+
+    #strengthText {
+        font-size: 19px;
+    }
+}
